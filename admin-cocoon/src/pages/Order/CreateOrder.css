@@ -1,0 +1,123 @@
+/* Reset các style cơ bản */
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  background-color: #f7f8f9;
+  color: #000;
+  overflow: hidden;
+}
+
+/* Style cho tiêu đề chính */
+h1 {
+  color: #32325c;
+  margin: 0;
+  padding-right: 10px;
+  font-family: "Crimson Text", sans-serif;
+  font-size: calc(2vw + 2vh + 1vmin);
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  overflow: auto;
+}
+
+/* Style cho header của trang thanh toán */
+.checkout-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Container chứa form, căn giữa nội dung */
+.checkout-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Container cho form */
+.form-container {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 10px 35px rgba(50, 50, 93, 0.1), 0 2px 15px rgba(0, 0, 0, 0.07);
+  width: 50%;
+  max-width: 400px;
+}
+
+/* Form thanh toán, hiển thị các phần tử theo cột */
+.checkout-form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Phần thông tin thanh toán */
+.billing-info {
+  margin-bottom: 30px;
+}
+
+/* Style cho các nhãn của input */
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #000;
+}
+
+/* Style cho các input, textarea */
+input, .ant-input, .ant-input-textarea {
+  margin-bottom: 15px;
+  font-size: 14px;
+  color: #000;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #e6ebf1;
+  box-sizing: border-box;
+}
+
+/* Style cho nút Đặt hàng */
+.checkout-btn {
+  display: inline-block;
+  height: 40px;
+  width: 100%;
+  margin-top: 20px;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 40px;
+  letter-spacing: 0.025em;
+  background: #32325d; /* Màu nền */
+  color: #fff;        /* Màu chữ */
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+  transition: all 150ms ease;
+}
+
+.checkout-btn:hover {
+  background-color: #5c6ac4; /* Màu khi hover */
+}
+
+
+/* Các phương thức giao hàng và thanh toán */
+.shipping-method, .payment-method {
+  margin-top: 30px;
+}
+
+/* Style cho Stripe input */
+.StripeElement {
+  padding: 10px 12px;
+  border-radius: 4px;
+  background-color: white;
+  border: 1px solid transparent;
+  box-shadow: 0 1px 3px 0 #e6ebf1;
+  box-sizing: border-box;
+}
+
+/* Khi Stripe input được focus */
+.StripeElement--focus {
+  box-shadow: 0 1px 3px 0 #cfd7df;
+}
+
